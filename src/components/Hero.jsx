@@ -11,17 +11,19 @@ const Hero = () => {
   // const parallaxRef = useRef(null);
   return (
     <div className="max-w-screen-xl mx-auto flex mt-4">
-      <div className="w-2/5  bg-purple-950">
-        <h1>Where Gardens Flourish And Dreams Blossom.</h1>
-        <p>
+      <div className="w-2/5 bg-green-700 p-10 flex flex-col align-center">
+        <h1 className="text-4xl  pt-6">Where Gardens Flourish And Dreams Blossom.</h1>
+        <p className="pt-6">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in pellentesque elit, non ultrices massa.
         </p>
+    <button className="pt-10 mr-auto">See More</button>
       </div>
-      <div className="w-3/5 bg-blue-950 bg-cover bg-center h-[520px]"
-        style={{backgroundImage: `url(${image})`}}
+      <div className="w-3/5 bg-cover bg-center h-[520px]"
+        style={{ backgroundImage: `url(${image})` }}
       >
-        
       </div>
+
+
     </div>
   );
 };
