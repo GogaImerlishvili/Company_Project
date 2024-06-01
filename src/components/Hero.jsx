@@ -1,14 +1,8 @@
-import Section from "./Section";
-import Button from "./Button";
-import { curve, heroBackground, robot } from "../assets";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
-import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
-import { useRef } from "react";
 import image from '../images/image1.jpg'
 
 const Hero = () => {
-  // const parallaxRef = useRef(null);
   return (
     <div className="max-w-screen-xl mx-auto flex mt-4">
       <div className="w-2/5 bg-green-700 p-10 flex flex-col align-center">
@@ -22,8 +16,6 @@ const Hero = () => {
         style={{ backgroundImage: `url(${image})` }}
       >
       </div>
-
-
     </div>
   );
 };
